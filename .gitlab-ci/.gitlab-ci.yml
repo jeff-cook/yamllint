@@ -1,0 +1,9 @@
+yamllint:
+  stage: pre_build
+  rules:
+    - exists:
+        - '**.yaml'
+        - '**.yml'
+  image: registry.gitlab.com/jeff_cook/yamllint
+  script:
+    - yamllint -f parsable .
