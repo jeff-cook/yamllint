@@ -3,6 +3,9 @@ variables:
   IMAGE_COMMIT: $CI_REGISTRY_IMAGE/commit:$CI_COMMIT_SHA
   IMAGE_PUSH: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest
 
+include:
+  - remote: 'https://gitlab.com/jeff_cook/microscanner/-/raw/master/include/.gitlab-ci.yaml'
+
 stages:
   - debug
   - pre_build
