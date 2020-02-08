@@ -4,7 +4,9 @@ variables:
   IMAGE_PUSH: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest
 
 include:
-  - remote: 'https://gitlab.com/jeff_cook/microscanner/-/raw/master/include/.gitlab-ci.yaml'
+  - project: 'jeff_cook/microscanner'
+    ref: master
+    file: '/include/.gitlab-ci.yaml'
 
 stages:
   - debug
