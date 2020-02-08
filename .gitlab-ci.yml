@@ -6,7 +6,7 @@ variables:
 include:
   - project: 'jeff_cook/microscanner'
     ref: master
-    file: '/include/.gitlab-ci.yaml'
+    file: '/.gitlab-ci/.gitlab-ci.yml'
 
 stages:
   - debug
