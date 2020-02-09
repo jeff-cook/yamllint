@@ -7,6 +7,9 @@ include:
   - project: 'jeff_cook/microscanner'
     ref: master
     file: '/.gitlab-ci/.gitlab-ci.yml'
+  - project: 'jeff_cook/trivy'
+    ref: master
+    file: '/.gitlab-ci/.gitlab-ci.yml'
 
 stages:
   - debug
@@ -58,26 +61,6 @@ verify_image:
     entrypoint: [""]
   script:
     - yamllint --help
-
-
-trivy:
-  stage: post_build
-  image:
-    name: aquasec/trivy
-    entrypoint: [""]
-  variables:
-    TRIVY_EXIT_CODE: '1'  
-    TRIVY_NO_PROGRESS: 'true'
-    # TRIVY_TEMPLATE: "@contrib/gitlab.tpl"
-    # TRIVY_FORMAT: template
-    TRIVY_OUTPUT: gl-container-scanning-report.json
-    TRIVY_USERNAME: $CI_REGISTRY_USER
-    TRIVY_PASSWORD: $CI_JOB_TOKEN 
-  script:
-    - trivy $IMAGE_COMMIT
-  artifacts:
-    untracked: true
-
 
 .docker_push_image:
   stage: deliver
