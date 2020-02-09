@@ -70,7 +70,7 @@ trivy:
     TRIVY_NO_PROGRESS: 'true'
     # TRIVY_TEMPLATE: "@contrib/gitlab.tpl"
     # TRIVY_FORMAT: template
-    # TRIVY_OUTPUT: gl-container-scanning-report.json
+    TRIVY_OUTPUT: gl-container-scanning-report.json
     TRIVY_USERNAME: $CI_REGISTRY_USER
     TRIVY_PASSWORD: $CI_JOB_TOKEN 
   script:
