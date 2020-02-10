@@ -4,10 +4,7 @@ variables:
   IMAGE_PUSH: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest
 
 include:
-  - project: 'jeff_cook/microscanner'
-    ref: master
-    file: '/.gitlab-ci/.gitlab-ci.yml'
-  - project: 'jeff_cook/trivy'
+  - project: 'jeff_cook/policy'
     ref: master
     file: '/.gitlab-ci/.gitlab-ci.yml'
 
