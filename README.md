@@ -1,6 +1,8 @@
 # Docker Image for yamllint
 
-Using yamllint Python module from https://github.com/adrienverge/yamllint
+Using yamllint Python module from <https://github.com/adrienverge/yamllint>.
+
+[yamllint documentation](https://yamllint.readthedocs.io/)
 
 ## Usage
 
@@ -24,4 +26,3 @@ include:
 stages:
   - pre_build
 ```
-
