@@ -1,0 +1,16 @@
+---
+extends: default
+
+rules:
+  document-end:
+    level: warning
+  empty-lines:
+    level: warning
+  empty-values:
+    level: warning
+  key-ordering:
+    level: warning
+  octal-values:
+    level: warning
+  quoted-strings:
+    level: warning
