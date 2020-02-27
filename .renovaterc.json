@@ -1,6 +1,7 @@
 {
   "labels": ["dependencies"],
   "extends": [
-    "config:base"
+    "config:base",
+     ":githubComToken(hVbULd83lCGsL6D7PWUP2NMCHMKkl30sNlhDY87oaLuwjP78yLQ40f3wtmR4jVE4Zh0jXHsKfN8oKwEUgx7eGcohl6PMJ1rPiVh61j3YuRpRrVjj72tVYCvnKD835Rruilm/0vrHAFawyker6cuQ1rXvOaoxt+Y+beZp9w+fic2apRgJoRj28XJRQAqosVMbdPMT0nJLoGa2svC5tywAKj8+UehpYXOLumxy89bJ8AdQLEfPS9Y/yS0NLAAY1fCxCA1lJlrmeDE08LhlYzBrLe71Rp5+K13dIRVDNsR/ZH6RBYqX5o9Z5a84k6saV2aKO4xWzauGPNk8+89uMOG21Q==)"
   ]
 }
