@@ -12,4 +12,4 @@ yamllint:
         - '**.yml'
   image: registry.gitlab.com/jeff_cook/yamllint
   script:
-    - '[ "$ENABLE_YAMLLINT" == "true" ] || yamllint -f parsable .'
+    - '[ "$ENABLE_YAMLLINT" == "true" ] && yamllint -f parsable .'
