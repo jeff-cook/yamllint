@@ -5,3 +5,7 @@ RUN pip install --requirement requirements.txt
 
 RUN mkdir -p /root/.config/yamllint
 COPY .yamllint.yaml /root/.config/yamllint/config
+
+RUN mkdir -p /work
+WORKDIR /work
+
