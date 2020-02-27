@@ -10,6 +10,8 @@ rules:
     level: warning
   key-ordering:
     level: warning
+  line-length:
+    level: warning
   octal-values:
     level: warning
   quoted-strings:
