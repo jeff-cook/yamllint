@@ -12,5 +12,5 @@ yamllint:
         - '**.yml'
   image: registry.gitlab.com/jeff_cook/yamllint
   script:
-    - '[ -z "$ENABLE_YAMLLINT" ] || exit 0'
+    - '[ "$ENABLE_YAMLLINT" != "true" ]|| exit 0'
     - yamllint -f parsable .
