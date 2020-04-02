@@ -2,12 +2,12 @@ variables:
   IMAGE_COMMIT: $CI_REGISTRY_IMAGE/commit:$CI_COMMIT_SHA
 
 include:
-  - project: 'jeff_cook/policy'
-    ref: 0.0.1
-    file: '/.gitlab-ci/.gitlab-ci.yml'
-  - project: 'jeff_cook/policy'
+  - project: jeff_cook/policy
     ref: 0.0.3
-    file: '/docker_build/.gitlab-ci.yml'
+    file: /.gitlab-ci/.gitlab-ci.yml
+  - project: jeff_cook/policy
+    ref: 0.0.3
+    file: /docker_build/.gitlab-ci.yml
 
 stages:
   - debug
