@@ -5,7 +5,7 @@ variables:
 
 include:
   - project: 'jeff_cook/policy'
-    ref: master
+    ref: 0.0.1
     file: '/.gitlab-ci/.gitlab-ci.yml'
 
 stages:
