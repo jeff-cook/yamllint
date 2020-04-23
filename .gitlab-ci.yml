@@ -37,4 +37,5 @@ verify_image:
     name: $IMAGE_COMMIT
     entrypoint: [""]
   script:
+    - yamllint --version
     - yamllint --help
