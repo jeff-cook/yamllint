@@ -20,7 +20,7 @@ Make sure you have added the `pre_build` stage to your pipeline.
 ```yaml
 include:
   - project: jeff_cook/yamllint
-    ref: 0.0.1
+    ref: 0.1.0
     file: /.gitlab-ci/.gitlab-ci.yml
 
 stages:
