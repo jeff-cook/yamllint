@@ -19,9 +19,9 @@ Make sure you have added the `pre_build` stage to your pipeline.
 
 ```yaml
 include:
-  - project: 'jeff_cook/yamllint'
-    ref: master
-    file: '/.gitlab-ci/.gitlab-ci.yml'
+  - project: jeff_cook/yamllint
+    ref: 0.0.1
+    file: /.gitlab-ci/.gitlab-ci.yml
 
 stages:
   - pre_build
