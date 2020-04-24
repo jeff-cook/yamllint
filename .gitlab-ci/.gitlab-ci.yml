@@ -10,6 +10,6 @@ yamllint:
     - exists:
         - '**.yaml'
         - '**.yml'
-  image: registry.gitlab.com/jeff_cook/yamllint:0.1.0
+  image: registry.gitlab.com/jeff_cook/yamllint:0.1.1
   script:
     - '[ "$ENABLE_YAMLLINT" == "true" ] && yamllint -f parsable .'
