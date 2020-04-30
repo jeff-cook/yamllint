@@ -3,10 +3,10 @@ variables:
 
 include:
   - project: jeff_cook/policy
-    ref: 0.0.3
+    ref: v0.1.0
     file: /.gitlab-ci/.gitlab-ci.yml
   - project: jeff_cook/policy
-    ref: 0.0.3
+    ref: v0.1.0
     file: /docker_build/.gitlab-ci.yml
 
 stages:
